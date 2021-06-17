@@ -1,0 +1,20 @@
+.main-header {
+    width: 110%;
+    height: 5rem;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: blanchedalmond;
+    margin-bottom: 50px;
+}
+
+.title{
+    font-size: 30px;
+}
+
+.btn{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+}
