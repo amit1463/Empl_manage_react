@@ -2,36 +2,38 @@ import React, {useEffect, useState} from 'react'
 import Login from './Components/Login';
 import Home from './Components/Home';
 import Header from "./Components/Header";
+import './App.css';
 
 function App() {
 
-  const [isLoggedIn, setLoggedIn] = useState(false);
+  const [isloggedIn, setloggedIn] = useState(false);
 
 useEffect(()=>{
-  const storedValue = localStorage.getItem('isLoggedIn');
+  const storedValue = localStorage.getItem('isloggedIn');
   if(storedValue === '1'){
-    setLoggedIn(true)
+    setloggedIn(true)
   }
 },[])
 
 
 const loginHandler = (email, password) => {
-    localStorage.setItem('isLoggedIn', '1')
-    setLoggedIn(true)
+    localStorage.setItem('isloggedIn', '1')
+    setloggedIn(true)
 }
 
 const logoutHandler = () => {
-  localStorage.removeItem('isLoggedIn');
-  setLoggedIn(false);
+  localStorage.removeItem('isloggedIn');
+  setloggedIn(false);
 }
 
   return (
     <>
-      <Header isAuthenticated={isLoggedIn} onLogout={logoutHandler} />
-      <main>
-        {!isLoggedIn && <Login onLogin={loginHandler} />}
-        {isLoggedIn && <Home onLogin={logoutHandler} />}
+      <Header isAuthenticated={isloggedIn} onLogout={logoutHandler} />
+      <main className="main">
+        {!isloggedIn && <Login onLogin={loginHandler} />}
+        {isloggedIn && <Home onLogin={logoutHandler} />}
       </main>
+      
     </>
   );
 }

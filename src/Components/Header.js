@@ -7,7 +7,7 @@ function Header(props) {
             <div className={classes.title}>
                 User Authentication
             </div>
-            <button className={classes.btn} isLoggedIn={props.isAuthenticated} onClick={props.onLogout} >{props.isAuthenticated ? 'Logout' : "Admin"}</button>
+            <button className={classes.btn} onClick={props.onLogout} >{props.isAuthenticated ? 'Logout' : "Admin"}</button>
         </header>
     )
 }

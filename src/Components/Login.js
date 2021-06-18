@@ -13,12 +13,20 @@ function Login(props) {
   const [passwordIsValid, setPasswordIsValid] = useState();
   const [formIsValid, setFormIsValid] = useState(false);
 
+  // const [val,setVal] = useState(false);
+     
+  const [email,setEmail] = useState(false);
+  const [pass,setPass] = useState(false); 
 
 
-
+  const emailVal = "user@gmail.com";
+  const passVal = "pass";
+  
   const emailChangeHandler = (event) => {
     setEnteredEmail(event.target.value);
-
+    if(event.target.value === emailVal){
+      setEmail(true)
+    } 
     setFormIsValid(
       event.target.value.includes("@") && enteredPassword.trim().length > 6
     );
@@ -26,7 +34,9 @@ function Login(props) {
 
   const passwordChangeHandler = (event) => {
     setEnteredPassword(event.target.value);
-
+    if(event.target.value===passVal){
+      setPass(true);
+    }
     setFormIsValid(
       event.target.value.trim().length > 6 && enteredEmail.includes("@")
     );
@@ -44,10 +54,22 @@ function Login(props) {
   //submit
   const submitHandler = (e) => {
     e.preventDefault();
-    props.onLogin(enteredEmail,enteredPassword)
-  };
+    
+    if(enteredEmail!=="" || enteredPassword!==""){
+      if(email===true && pass===true){
+        props.onLogin(enteredEmail,enteredPassword)
+      }else{
+          alert("wrong username or password");
+        
+      }
+    setEnteredEmail("");
+    setEnteredPassword("");
+    
+  }
+}
 
     return (
+      <>
       <div className={classes.card}>
         <div>
           <img src={secureLogo} alt="logo" />
@@ -55,7 +77,7 @@ function Login(props) {
         <form onSubmit={submitHandler}>
           <div className={classes.email}>
             <label className={classes.email_input} htmlFor="email">
-              E-Mail
+              Email :
             </label>
             <input
               type="email"
@@ -67,7 +89,7 @@ function Login(props) {
           </div>
           <div className={classes.pass}>
             <label className={classes.pass_input} htmlFor="password">
-              Password
+              Password :
             </label>
             <input
               type="password"
@@ -83,8 +105,13 @@ function Login(props) {
             </button>
           </div>
         </form>
+        
       </div>
+      <h4>The email is "user@gmail.com" and password is "pass"<br/>
+      else will show an alert about wrong username or password
+    </h4>
+    </>
     );
 }
 
-export default Login
+export default Login;

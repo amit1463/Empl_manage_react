@@ -15,7 +15,7 @@ const data = [
     info: "Rick Steves' Best of Ireland tour kicks off with the best of Dublin, followed by Ireland's must-see historical sites, charming towns, music-filled pubs, and seaside getaways — including Kinsale, the Dingle Peninsula, the Cliffs of Moher, the Aran Islands, Galway, Connemara, Giant's Causeway, and the compelling city of Belfast. All along the way, Rick's guides will share their stories to draw you in to the Emerald Isle, and the friendliness of the people will surely steal your heart. Join us for the Best of Ireland in 14 Days!",
     image:
       "https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fHBlb3AlMjBwb3J0cmFpdHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60",
-    role: "CEO",
+    role: "Web Developer",
   },
   {
     id: "recJLWcHScdUtI3ny",
@@ -33,7 +33,7 @@ const data = [
     info: "Our Rome tour serves up Europe's most intoxicating brew of dazzling art, earth-shaking history, and city life with style. On this Rome vacation, your tour guide will resurrect the grandeur of ancient Rome's Colosseum, Forum, Pantheon, and nearby Ostia Antica. From the Renaissance and Baroque eras, you'll marvel at St. Peter's Basilica, the Vatican Museums, Sistine Chapel, and Borghese Gallery. You'll also enjoy today's Rome, with neighborhood walking tours, memorable restaurants, and time to explore on your own. Join us for the Best of Rome in 7 Days!",
     image:
       "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHBlb3AlMjBwb3J0cmFpdHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60",
-    role: "Backend developer",
+    role: "Node developer",
   },
   {
     id: "receAEzz86KzW2gvH",
@@ -43,6 +43,33 @@ const data = [
     image:
       "https://images.unsplash.com/photo-1510382676078-1ad15415c4db?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDZ8fHBlb3AlMjBwb3J0cmFpdHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60",
     role: "DevOps Engineer",
+  },
+  {
+    id: "recIwxrUU9HfJR3B4",
+    EmployeeId: "SY4F7842",
+    name: "Lorem Ipsum",
+    info: "Rick Steves' Best of Ireland tour kicks off with the best of Dublin, followed by Ireland's must-see historical sites, charming towns, music-filled pubs, and seaside getaways — including Kinsale, the Dingle Peninsula, the Cliffs of Moher, the Aran Islands, Galway, Connemara, Giant's Causeway, and the compelling city of Belfast. All along the way, Rick's guides will share their stories to draw you in to the Emerald Isle, and the friendliness of the people will surely steal your heart. Join us for the Best of Ireland in 14 Days!",
+    image:
+      "https://previews.123rf.com/images/stockyimages/stockyimages1603/stockyimages160300972/54434012-smart-male-employee-posing-over-white.jpg",
+    role: "Backend Developer",
+  },
+  {
+    id: "recndnrvU9HfJR3B4",
+    EmployeeId: "JI3L4576",
+    name: "Will Smith",
+    info: "Rick Steves' Best of Ireland tour kicks off with the best of Dublin, followed by Ireland's must-see historical sites, charming towns, music-filled pubs, and seaside getaways — including Kinsale, the Dingle Peninsula, the Cliffs of Moher, the Aran Islands, Galway, Connemara, Giant's Causeway, and the compelling city of Belfast. All along the way, Rick's guides will share their stories to draw you in to the Emerald Isle, and the friendliness of the people will surely steal your heart. Join us for the Best of Ireland in 14 Days!",
+    image:
+      "https://images.unsplash.com/photo-1559192823-e1d8e87def54?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Ym9zcyUyMGVtcGxveWVlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
+    role: "Backend Developer",
+  },
+  {
+    id: "recIwxrvU9HfJR3B4",
+    EmployeeId: "DM2K2547",
+    name: "Sera Williams",
+    info: "Rick Steves' Best of Ireland tour kicks off with the best of Dublin, followed by Ireland's must-see historical sites, charming towns, music-filled pubs, and seaside getaways — including Kinsale, the Dingle Peninsula, the Cliffs of Moher, the Aran Islands, Galway, Connemara, Giant's Causeway, and the compelling city of Belfast. All along the way, Rick's guides will share their stories to draw you in to the Emerald Isle, and the friendliness of the people will surely steal your heart. Join us for the Best of Ireland in 14 Days!",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNgv-z2ilxaTi1QCdyjqYJyFUkIrVeY0LMYw&usqp=CAU",
+    role: "Full Stack Developer",
   },
 ];
 
